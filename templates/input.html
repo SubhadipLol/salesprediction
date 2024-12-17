@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV File Uploader</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='inputstyles.css')}}">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your CSV File</h1>
+        <input type="file" id="csvFileInput" accept=".csv">
+        <button id="processFileButton" onclick="checkinput()">Process File</button>
+        <div id="output"></div>
+    </div>
+    <script src="{{ url_for('static', filename='inputscript.js') }}"></script>
+</body>
+</html>

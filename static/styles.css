@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-image: url("/static/homepagebg.jpg"); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed */
+    background-color: #f9f9f9; /* Fallback light background color */
+
+    color: #333; /* Default text color */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Intro Text Section */
+.intro-text {
+    margin: 30px auto; /* Center the section with some vertical spacing */
+    max-width: 800px; /* Restrict width for better readability */
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for depth */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+
+    color: #f1f1f1; /* White text for better contrast */
+}
+
+.intro-text p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin: 0; /* Remove default margins */
+    color: #e0e0e0; /* Slightly lighter text color */
+}
+
+/* Main Content Container */
+.container {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7); /* Lighter semi-transparent white */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px; /* Keep the container size manageable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header inside container */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222; /* Slightly darker text for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+}
+
+/* Button Styling */
+#center-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: #fff; /* White text */
+    background: linear-gradient(to right, #4CAF50, #45a049); /* Gradient green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+#center-button:hover {
+    background: linear-gradient(to right, #45a049, #3e9240); /* Darker gradient on hover */
+    transform: scale(1.02); /* Button grows slightly */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+#center-button:active {
+    transform: scale(0.98); /* Shrink effect on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro-text {
+        padding: 15px;
+        font-size: 1rem;
+        margin: 20px auto;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #center-button {
+        width: 100%; /* Make button full-width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.5rem; /* Reduce heading size for small screens */
+    }
+
+    #center-button {
+        font-size: 1rem; /* Smaller button text for compact spaces */
+        padding: 12px 20px;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='choosemodelstyles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="{{url_for('static',filename='choosemodelscript.js')}}"></script>
+    
+</head>
+<body>
+    <div class="intro-text">
+        <h2> Great , before moving on , please choose a model for the next step <br><br>
+            Model 1 - Train with our own compiled dataset. <br>
+            Model 2 - Train with your local CSV file.  
+        </h2>
+    </div>
+    <div class="container">
+        <h2 >Click the model to proceed </h2>  <!-- Initial message -->
+
+        <button id="model_1"onclick="navigateToStart()">Model 1</button>
+        <button id="model_2"onclick="navigateToStart()">Model 2 </button>
+    </div>
+</body>
+</html>

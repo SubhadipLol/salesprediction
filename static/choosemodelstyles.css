@@ -1,0 +1,94 @@
+/* Apply a gradient background for the body */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/homepagebg.jpg");
+    background-size: cover; /* Ensure the background image covers the full viewport */
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style for the container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack the intro text and buttons vertically */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Subtle transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Style the heading */
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Style for the intro text */
+.intro-text {
+    background: rgba(0, 0, 0, 0.3); /* Darker semi-transparent background for better contrast */
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px); /* Stronger blur effect for better readability */
+    margin-bottom: 30px; /* Space between intro and buttons */
+    /* max-width: 80%; */
+    width: 100%;
+}
+
+/* Style the introduction text */
+.intro-text h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* General button styles */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out;
+    outline: none;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #ff5e50;
+    transform: scale(1.05);
+}
+
+/* Active effect for buttons */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for buttons in the container (to display side by side) */
+.container {
+    display: flex;
+    flex-direction: column; /* Keep intro and buttons in column */
+    align-items: center;
+}
+
+.container .buttons {
+    display: flex; /* Align buttons side by side */
+    justify-content: center; /* Center the buttons horizontally */
+    flex-direction: row;
+    gap: 20px; /* Add space between the buttons */
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='visualstyles.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Model Training Visuals</title>
+</head>
+<body>
+    <h1>Training and Validation Plots</h1>
+    <h3>Select a year to show results</h3>
+
+    <form id="year-selection-form" class="radioform">
+            <input type="radio" name="year" value="2011"> 2011
+        </label><label>
+            <input type="radio" name="year" value="2012"> 2012
+        </label><label>
+            <input type="radio" name="year" value="2013"> 2013
+        </label><label>
+            <input type="radio" name="year" value="2014"> 2014
+        </label>
+        <label>
+            <input type="radio" name="year" value="2015"> 2015
+        </label>
+        <label>
+            <input type="radio" name="year" value="2016"> 2016
+        </label>
+        <label>
+            <input type="radio" name="year" value="2017"> 2017
+        </label>
+        <label>
+            <input type="radio" name="year" value="2018"> 2018
+        </label>
+        <label>
+            <input type="radio" name="year" value="2019"> 2019
+        </label>
+        <label>
+            <input type="radio" name="year" value="2020"> 2020
+        </label>
+        <label>
+            <input type="radio" name="year" value="2021"> 2021
+        </label>
+        <label>
+            <input type="radio" name="year" value="2022"> 2022
+        </label>
+        <label>
+            <input type="radio" name="year" value="2023"> 2023
+        </label>
+        <label>
+            <input type="radio" name="year" value="2024"> 2024
+        </label>
+        <label>
+            <input type="radio" name="year" value="2025"> 2025
+        </label>
+    </form>
+
+    <h2>Generated Visualization</h2>
+    <div id="image-container">
+    </div>
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script src="{{url_for('static',filename='visualscript.js')}}"></script>
+
+</body>
+</html>

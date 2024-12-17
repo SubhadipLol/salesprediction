@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction menu</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='stylesmenu.css')}}">
+    <script src="{{url_for('static',filename='scriptmenu.js')}}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="stylesmenu.css">
+    <script src="scriptmenu.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <h1>To view the result, Please choose from the following:</h1>
+        <form id="radiohead-form">
+            <label>
+                <input type="radio" name="album" value="1"> Visualize Insights for a Specific Year
+            </label>
+            <label>
+                <input type="radio" name="album" value="2"> View Top Product Predictions by Category
+            </label>
+            <label>
+                <input type="radio" name="album" value="3"> Export Analysis Reports
+            </label>
+            <label>
+                <input type="radio" name="album" value="4"> Display Predictions by Price Category
+            </label>
+            <label>
+                <input type="radio" name="album" value="5"> Exit
+            </label>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+        <p id="selected-album">Selected Option: None</p>
+    </div>
+    <!-- <script src="scriptmenu.js"></script> -->
+</body>
+</html>

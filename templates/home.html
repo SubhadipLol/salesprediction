@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Read Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  <!-- jQuery for AJAX -->
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 id="status">Welcome! Click the button to load the CSV.</h1>
+        <button id="center-button" onclick="handleButtonClick()">Proceed</button>
+    </div>
+</body>
+</html>
